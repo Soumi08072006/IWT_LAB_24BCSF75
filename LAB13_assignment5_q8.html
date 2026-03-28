@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>ASSIGNMENT5_Q8</title>
+</head>
+<body bgcolor="white" text="black">
+<h1>Q8.WRITE A FUNCTION isPrime(num) that returns true if the number is prime,otherwise false.Test with different numbers</h1>
+<script>
+function isPrime(num)
+ {
+            if (num <= 1) return false;   // 0 and 1 are not prime
+            if (num === 2) return true;   // 2 is prime
+            if (num % 2 === 0) return false; // even numbers > 2 are not prime
+
+            // check divisibility up to sqrt(num)
+            for (let i = 3; i <= Math.sqrt(num); i += 2) {
+                if (num % i === 0) {
+                    return false;
+                }
+            }
+            return true;
+}
+document.write(isPrime(2));
+document.write(isPrime(3));
+document.write(isPrime(22));        
+       
+    </script>
+</body>
+</html>

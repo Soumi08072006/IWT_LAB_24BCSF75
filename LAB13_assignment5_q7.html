@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>ASSIGNMENT5_Q7</title>
+</head>
+<body bgcolor="white" text="black">
+	<h1>Q7.WRITE A PROGRAM TO CALCULATE HOW MANY TIME EACH ELEMENT OCCURS IN A PROGRAM</h1>
+	<script>
+        let nums = [10, 10, 12, 13, 15, 15, 16];
+        let frequency = {};
+
+        for (let i = 0; i < nums.length; i++) {
+            let value = nums[i];
+            if (frequency[value]) {
+                frequency[value]++;   // increase count if already exists
+            } else {
+                frequency[value] = 1; // initialize count
+            }
+        }
+
+        // Print results
+        for (let key in frequency) {
+            document.write(key + " occurs " + frequency[key] + " times<br>");
+        }
+    </script>
+	</body>
+	</html>

@@ -1,0 +1,21 @@
+<html>
+<head>
+	<title>ASSIGNMENT5_Q6</title>
+</head>
+<body bgcolor="white" text="black">
+	<h1>Q6.WRITE A PROGRAM TO REMOVE DUPLICATE ELEMENTS FROM AN ARRAY AND PRINT THE NEW ARRAY</h1>
+	<script>
+		let nums=[10,10,12,13,15,15,16];
+		let a=[];
+		let i=0;
+		for (i = 0; i < nums.length; i++) {
+			if (!a.includes(nums[i])) 
+			{
+                a.push(nums[i]);
+            }
+        }
+		document.write(a+"unique elements of array");
+	</script>
+</body>
+</html>
+		

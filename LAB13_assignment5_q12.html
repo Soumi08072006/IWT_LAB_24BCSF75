@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>ASSIGNMENT5_Q12</title>
+</head>
+<body>
+<h2>Q12.Write a function generate Fibonacci(n) that generates the first n Fibonacci
+numbers and returns in an array</h2>
+<script>
+	function generateFibonacci(n)
+	{
+		let fib=[];
+		for(let i=0;i<n;i++)
+		{
+			if(i==0)
+			{
+				fib.push(0);
+			}
+			else if(i==1)
+			{
+				fib.push(1);
+			}
+			else
+			{
+				fib.push(fib[i-1]+fib[i-2]);
+			}
+		}
+		return fib;
+	}
+	let n=7;
+	let result=generateFibonacci(n);
+	document.write("Fibonacci series:"+result);
+</script>
+</body>
+</html>

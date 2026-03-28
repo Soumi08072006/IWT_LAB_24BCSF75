@@ -1,0 +1,31 @@
+<html>
+<head>
+	<title>ASSIGNMENT5_Q5</title>
+</head>
+<body bgcolor="white" text="black">	
+	<h1>Q5.Write a program to find the second largest element of an array without sorting it</h1>
+	<script>
+	let numbers=[10,12,13,14];
+	let largest=numbers[0];
+	let slargest=numbers[0];
+	for(let i=0;i<numbers.length;i++)
+	{
+		if(numbers[i]>largest)
+		{
+			largest=numbers[i];
+		}
+	}
+	let i=0;
+	while(i<numbers.length)
+	{
+		if(numbers[i]<largest && numbers[i]>slargest)
+		{
+			slargest=numbers[i];
+		}
+		i++;
+	}
+	document.write(slargest+"is the second largest element");
+		
+	</script>
+	</body>
+	</html>

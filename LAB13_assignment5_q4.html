@@ -1,0 +1,25 @@
+<html>
+<head>
+    <title>Assignment5_q4</title>
+</head>
+<body bgcolor="white" text="black">
+    <h1>q3. Write a program to calculate and print the largest,sum,average,and smallest of all elements of an array</h1>
+    <script>
+        let a=[1,5,6,7,8,12]
+		let sum=0;
+		let largest=a[0];
+		let smallest=a[0];
+		for(let i=0;i<a.length;i++)
+		{
+			sum=sum+a[i];
+			if(a[i]>largest)largest=a[i];
+			if(a[i]<smallest)smallest=a[i];
+		}
+		avg=sum/a.length;
+		document.write("sum="+sum+"<br>");
+		document.write("largest"+largest+"<br>");
+		document.write("smallest"+smallest+"<br>");
+		document.write("average"+avg+"<br>");
+	</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>Assignment5_q3</title>
+</head>
+<body bgcolor="white" text="black">
+    <h1>q3. Write a program using while loop to reverse the digits of a no. and check if its palindrome or not</h1>
+    <script>
+        var a = parseInt(prompt("Enter a number"));
+        let x=0;
+		let i=0;
+		let n=a;
+		while(n!=0)
+		{
+			i=n%10;
+			x=x*10+i;
+			n=Math.floor(n/10);
+		}
+		if(a==x)
+		{
+			document.write(a+"is a palindrome " );
+		}
+		else
+		{
+			document.write(a+" is not a palindrome");
+		}
+    </script>
+</body>
+</html>
